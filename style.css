@@ -1,0 +1,528 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+button{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+/*-----header-------*/
+#header{
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+}
+.container {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.logo{
+    margin-top: 30px;
+    width: 100px;
+}
+.header-text{
+    width: 350px;
+    margin-top: 60px;
+    text-align: left;
+}
+.header-text h1{
+font-size: 34px;
+}
+.square{
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin: 15px 0;
+    background-color: #f67c92;
+
+}
+
+.header-text p{
+
+    line-height: 18px;
+    color: #777;
+}
+
+.common-btn{
+    padding: 18px 40px;
+    background-color: transparent;
+    font-weight: bold;
+    outline: none;
+    border: 2px solid #f67c92; ;
+}
+
+.header-text button{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.line-1{
+    width: 15px;
+    height: 15px;
+    background: #f67c92;
+    display: inline-block;
+}
+.line-2{
+    width: 80px;
+    height: 1px;
+    background: #f67c92;
+    display: inline-block;
+}
+.line-3{
+    width: 60px;
+    height: 1px;
+    background: #f67c92;
+    display: inline-block;
+}
+
+.line{
+ 
+    line-height: 8px;
+}
+
+/*---- nav-------*/
+
+#sidenav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background-color: f67c92;
+    z-index: 2;
+    transition: ease .5s;
+}
+
+#sidenav ul li {
+    list-style: none;
+    margin: 40px 20px;
+}
+#sidenav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#menubtn{
+    width: 40px;
+    position: fixed;
+    right: 65px;
+    top: 35px;
+    z-index: 2;
+    cursor: pointer;
+    cursor: pointer;
+}
+
+/*------- about-----------*/
+
+.about-row{
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.about-left-col, .about-right-col{
+    flex-basis: 50%;
+}
+
+.about-left-col img{
+    width: 100%;
+}
+
+.about-right-col{
+    text-align: right;
+}
+.about-text{
+    max-width: 500px;
+    margin-right: 100px;
+    display: inline-block;
+}
+.about-text p{
+    margin-bottom: 20px;
+}
+.about-text h2{
+    margin: 40px 0;
+    font-size: 28px;
+    font-style: italic;
+}
+.about-text h3{
+    font-size: 20px;
+    font-style: italic;
+    color: #797979;
+}
+
+/*----features -------*/
+
+#features{
+
+    padding: 100px 0;
+
+}
+.feature-row{
+    width: 80%;
+    margin: 100px  auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-col{
+    flex-basis: 25%;
+    text-align: center;
+
+}
+.feature-col img{
+    width: 100px;
+}
+.feature-col h4{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.feature-btn{
+    margin: 70px auto 0 auto;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+}
+.feature-btn .line{
+    text-align: right;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/*--------Courses--------*/
+#courses{
+    padding: 100px 0;
+}
+.course-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.course-left-col, .course-right-col{
+    flex-basis: 50%;
+}
+.course-right-col img{
+    width: 100%;
+}
+.course-text{
+    width: 350px;
+    text-align: left;
+}
+.course-text button{
+    margin: 30px 0;
+}
+/*------Offer----------*/
+.offer-row{
+    padding: 0 0 ;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.offer-left-col, .offer-right-col{
+    flex-basis: 50%;
+}
+
+.offer-left-col img{
+    width: 100%;
+}
+
+.offer-right-col{
+    text-align: right;
+}
+.offer-text{
+    max-width: 500px;
+    margin-right: 100px;
+    display: inline-block;
+}
+.offer-text p{
+    margin-bottom: 60px;
+}
+.offer-text button{
+    margin-bottom: 20px;
+}
+
+/*----Contact -------*/
+#contact{
+
+}
+.contact-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact-right-col, .contact-left-col{
+    flex-basis: 50%;
+}
+.contact-right-col img{
+    width: 100%;
+}
+form{
+    margin: 30px 0 ;
+    width: 350px;
+}
+form input{
+    width: 100%;
+    padding: 12px 10px;
+    outline: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    border: 2px solid #fab3c4;
+    margin-bottom: 5px;
+}
+.btn-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*----footer-------*/
+
+#footer{
+    padding: 50px 0 30px;
+}
+hr{
+    width: 100%;
+    border: none;
+    border-top: 2px solid #f67c92;
+
+}
+
+.footer-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left-col{
+    flex-basis: 50%;
+    margin-top: 60px;
+}
+.footer-right-col{
+    flex-basis: 35%;
+}
+.footer-links{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.links-title h4{
+    color: #fab3c4;
+    margin-bottom: 15px;
+}
+.links-title small{
+    display: block;
+    font-size: 13px;
+    color: #777;
+}
+.footer-info{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-logo img{
+    width: 100px;
+}
+.footer-logo button{
+    padding: 12px 38px;
+    margin-top: 20px;
+    font-size: 10px;
+}
+.copyright-text, .footer-logo{
+    flex-basis: 40%;
+}
+
+/*--Social icons---*/
+.social-icons{
+    width: 50px;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+.social-icons img{
+    display: block;
+    width: 20px;
+    margin: 0 auto 20px;
+    cursor: pointer;
+}
+
+/*-----------------Responsive--------------*/
+
+@media screen and (max-width: 720px) {
+
+    #header {
+        background-image: none;
+    }
+    .container {
+       /* margin-left: 60px;*/
+    }
+    .logo{
+        margin-top: 25px;
+        width: 100px;
+    }
+    .header-text{
+        text-align: center;
+        width: 350px;
+        margin-top: 30px;
+    }
+    .header-text h1{
+        font-size: 34px;
+    }
+
+
+
+    .about-left-col, .about-right-col{
+        flex-basis: 100%;
+    }
+
+
+
+    .about-right-col{
+        text-align: center;
+    }
+    .about-text{
+        max-width: 500px;
+        margin-right: 100px;
+        display: inline-block;
+    }
+    .about-text p{
+        margin-bottom: 20px;
+    }
+    .about-text h2{
+        margin: 40px 0;
+        font-size: 28px;
+        font-style: italic;
+    }
+    .about-text h3{
+        font-size: 20px;
+        font-style: italic;
+        color: #797979;
+    }
+    #courses{
+        padding: 100px 0;
+    }
+    .course-row{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .course-left-col, .course-right-col{
+        flex-basis: 100%;
+    }
+    .course-right-col img{
+        width: 100%;
+    }
+    .course-text{
+        width: 350px;
+        text-align: center;
+    }
+    .course-text button{
+        margin: 30px 0;
+    }
+    /*------Offer----------*/
+    .offer-row{
+        padding: 0 0 ;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+
+    .offer-left-col, .offer-right-col{
+        flex-basis: 100%;
+    }
+
+    .offer-left-col img{
+        width: 100%;
+    }
+
+    .offer-right-col{
+        text-align: center;
+    }
+    .offer-text{
+        max-width: 500px;
+        display: inline-block;
+    }
+
+    /*----Contact -------*/
+
+
+    .contact-right-col, .contact-left-col{
+        flex-basis: 100%;
+    }
+    .contact-right-col img{
+        width: 100%;
+    }
+    form{
+        margin: 30px 0 ;
+        width: 300px;
+    }
+
+
+
+    /*----footer-------*/
+
+    #footer{
+        padding: 50px 0 30px;
+    }
+
+
+
+    .footer-left-col{
+        flex-basis: 100%;
+        margin-top: 30px;
+    }
+    .footer-right-col{
+        flex-basis: 100%;
+    }
+
+    .footer-info{
+
+        align-items: center;
+
+    }
+
+    .footer-logo img{
+        width: 50px;
+    }
+    .footer-logo button{
+        padding: 12px 20px;
+        margin-left: 20px;
+
+    }
+    .copyright-text, .footer-logo{
+        flex-basis: 50%;
+    }
+
+
+    /*--Social icons---*/
+    .social-icons{
+        width: 30px;
+    }
+    .social-icons img{
+
+        width: 15px;
+
+    }
+
+
+
+
+}
